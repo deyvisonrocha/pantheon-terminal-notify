@@ -1,6 +1,6 @@
 # pantheon-terminal-notify zsh plugin
 
-background notifications for long running commands! Supports Elementary OS Freya.
+Background notifications for long running commands! Supports Elementary OS Hera.
 
 ### Package from [t413/zsh-background-notify](https://github.com/t413/zsh-background-notify)
 
@@ -8,9 +8,10 @@ Standalone homepage: [deyvisonrocha/pantheon-terminal-notify-zsh-plugin](https:/
 
 ----------------------------------
 
-## How to use!
+## Installation
 
-Just add pantheon-terminal-notify to your plugins list in your `.zshrc`
+1. `git clone git@github.com:deyvisonrocha/pantheon-terminal-notify-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/pantheon-terminal-notify`
+2. Add `pantheon-terminal-notify` to your plugin list - edit `~./zshrc` and change `plugins=(...)` to `plugins=(... pantheon-terminal-notify)`
 
 ## Screenshot
 
@@ -23,7 +24,7 @@ One can configure a few things:
 - `pantheon_terminal_notify_threshold` sets the notification threshold time (default 5 seconds)
 - `function pantheon_terminal_notify_threshold` lets you change the notification
 
-Use these by adding a function definition before the your call to source. Example:
+Use these by adding a function definition before your call to source. Example:
 
 ~~~ sh
 pantheon_terminal_notify_threshold=4  ## set your own notification threshold
